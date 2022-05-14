@@ -1,0 +1,48 @@
+{
+  "name": "<%=project%>",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/app,js",
+  "scripts": {
+    "start": "export NODE_ENV=development && set NODE_ENV=development  && nodemon --harmony ./src/bin/www",
+    "init_sql": "node ./init/index.js",
+    "dev": "node ./src/bin/www",
+    "prod": "export NODE_ENV=production && set NODE_ENV=production && npm run start",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pm2": "pm2 start src/bin/www.js",
+    "lint": "eslint src",
+    "lint:create": "eslint --init"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.13.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "koa": "^2.13.4",
+    "koa-router": "^10.1.1",
+    "prettier": "2.6.2"
+  },
+  "dependencies": {
+    "config": "^3.3.7",
+    "dotenv-safe": "^8.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "koa-body": "^4.2.0",
+    "koa-bodyparser": "^4.3.0",
+    "koa-mysql-session": "0.0.2",
+    "koa-session-minimal": "^4.0.2",
+    "koa2-swagger-ui": "^5.5.0",
+    "log4js": "^6.4.5",
+    "module-alias": "^2.2.2",
+    "mysql": "^2.18.1",
+    "swagger-jsdoc": "^6.2.0",
+    "ws": "^8.5.0"
+  },
+  "eslintConfig": {},
+  "_moduleAliases": {
+    "@src": "./src",
+    "@": "./"
+  }
+}

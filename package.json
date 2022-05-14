@@ -1,0 +1,17 @@
+{
+  "name": "generator-koa2tpl",
+  "version": "1.0.0",
+  "description": "koa2开发后台项目目录快速生成器",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "yeoman-generator": "^5.6.1"
+  }
+}

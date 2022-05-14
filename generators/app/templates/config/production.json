@@ -1,0 +1,48 @@
+{
+  "App": {
+    "ip": "0.0.0.0",
+    "port": 3001
+  },
+  "Router": {
+    "apiPrefix": ""
+  },
+  "Database": {
+    "DATABASE": "",
+    "USERNAME": "",
+    "PASSWORD": "",
+    "PORT": "",
+    "HOST": ""
+  },
+  "Log4js": {
+    "appenders": {
+      "error": {
+        "category": "errorLogger",
+        "type": "dateFile",
+        "filename": "logs/error/error",
+        "alwaysIncludePattern": true,
+        "pattern": "yyyy-MM-dd-hh.log"
+      },
+      "response": {
+        "category": "resLogger",
+        "type": "dateFile",
+        "filename": "logs/response/response",
+        "alwaysIncludePattern": true,
+        "pattern": "yyyy-MM-dd-hh.log"
+      }
+    },
+    "categories": {
+      "error": {
+        "appenders": ["error"],
+        "level": "error"
+      },
+      "response": {
+        "appenders": ["response"],
+        "level": "info"
+      },
+      "default": {
+        "appenders": ["response"],
+        "level": "info"
+      }
+    }
+  }
+}

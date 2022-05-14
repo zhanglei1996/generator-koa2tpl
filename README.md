@@ -1,0 +1,2 @@
+# 介绍
+yeoman的generator，用于创建一个开箱即用的koa2项目
